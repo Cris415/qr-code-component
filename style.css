@@ -1,3 +1,21 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  --white-color: hsl(0, 0%, 100%);
+  --light-gray-color: hsl(212, 45%, 89%);
+  --grayish-blue-color: hsl(220, 15%, 55%);
+  --dark-blue-color: hsl(218, 44%, 22%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgb(215, 225, 238);
+}
+.qr-code-container {
+  
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,8 +23,3 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-.qr-code-container {
-  
-}
-
