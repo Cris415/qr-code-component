@@ -1,6 +1,6 @@
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
+  height: 100%;
   --white-color: hsl(0, 0%, 100%);
   --light-gray-color: hsl(212, 45%, 89%);
   --grayish-blue-color: hsl(220, 15%, 55%);
@@ -8,17 +8,59 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Outfit", sans-serif;
   font-size: 1.5rem;
+  line-height: 1.2;
   background-color: rgb(215, 225, 238);
+  color: var(--dark-blue-color);
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+}
+
 .qr-code-container {
-  
+  box-sizing: border-box;
+  background-color: var(--white-color);
+  width: 32rem;
+  padding: 1.6rem;
+  border-radius: 2rem;
+}
+.qr-code-container img {
+  display: block;
+  object-fit: cover;
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.qr-code-caption {
+  margin-bottom: 2rem;
+  padding: 0 1.2rem;
+  text-align: center;
+}
+.qr-code-caption h1 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2.0rem;
+}
+.qr-code-caption p {
+  color: var(--grayish-blue-color);
+  font-size: 1.5rem;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  flex-shrink: 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
